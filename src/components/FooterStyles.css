@@ -47,6 +47,10 @@
     font-size: 1.1rem;
 }
 
+h1{
+    color: #fff;
+}
+
 .last-text {
     align-items: center;
     justify-content: center;

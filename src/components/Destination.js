@@ -7,12 +7,14 @@ import Mountain6 from "../assets/18.jpg";
 import DestinationData from "./DestinationData";
 import "./DestinationStyles.css";
 
-const Destination = () => {
+const Destination = (props) => {
   return (
-    <div className="destination">
-      <h1>Popular Destinations</h1>
-      <p>Trips give you the best opportunity to discover a lot within a time frame.</p>
-      <DestinationData
+    <div id="about-section" className="destination">
+      <h2 style={{fontSize: "2.4rem"}}>{props.title}</h2>
+      <p>
+        {props.paragraph}
+      </p>
+      {/* <DestinationData
         className="first-des"
         heading="Goh Kincha, Manali"
         text="Discover the breathtaking beauty of Manali from a new perspective at Goh Kincha Peak. Nestled amidst the Himalayan landscape, this enchanting destination offers travelers an unforgettable adventure. With its awe-inspiring vistas and serene ambiance, Goh Kincha Peak is a must-visit for nature enthusiasts and thrill-seekers alike. Whether you're an avid trekker or simply looking to escape the hustle and bustle of city life, this peak promises a rejuvenating experience like no other. Explore the wonders of Manali with us and make memories that will last a lifetime."
@@ -32,7 +34,7 @@ const Destination = () => {
         text="Experience the ultimate coastal paradise at Baga Beach in Goa, where sun-kissed shores meet the vibrant spirit of India. Nestled along the Arabian Sea, this stunning destination is a must-visit for travelers seeking relaxation and adventure. With its pristine golden sands and an array of water sports, Baga Beach promises an unforgettable vacation. Savor delectable seafood at beachside shacks, dance to the rhythm of live music, and immerse yourself in the vibrant nightlife. Explore Goa's charm with us, and let Baga Beach be your gateway to an exotic Indian adventure!"
         img1={Mountain5}
         img2={Mountain6}
-      />
+      /> */}
     </div>
   );
 };

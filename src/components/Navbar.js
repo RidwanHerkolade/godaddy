@@ -2,6 +2,7 @@ import { Component } from "react";
 import "./NavbarStyles.css";
 import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
+// import { Link } from 'react-scroll'
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -11,7 +12,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">Travelo</h1>
+        <h1 className="navbar-logo">Pinny</h1>
         <div className="menu-icons" onClick={this.handleClick}>
           <i className={this.state.clicked ? "fa fa-times" : "fa fa-bars"}></i>
         </div>
@@ -19,7 +20,7 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className={item.cName} to={item.url}>
+                <Link className={item.cName} to={item.url} smooth={true} duration={500}>
                   <i className={item.icon}></i>
                   {item.title}
                 </Link>

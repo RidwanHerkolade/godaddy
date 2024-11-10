@@ -8,12 +8,12 @@ function Service() {
   return (
     <>
       <Navbar />
-      <Hero
+      {/* <Hero
         cName="hero-mid"
         heroImg={NightImg}
         title="Service"
         btnClass="hide"
-      />
+      /> */}
       <Trip />
       <Footer />
     </>

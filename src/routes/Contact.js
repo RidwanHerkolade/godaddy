@@ -7,15 +7,15 @@ import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero
         cName="hero-mid"
         heroImg={NightImg}
         title="Contact"
         btnClass="hide"
-      />
+      /> */}
       <ContactForm />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

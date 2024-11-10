@@ -7,25 +7,25 @@ export const MenuItems = [
   },
   {
     title : "About",
-    url : "/about",
+    url : "/",
     cName : "nav-links",
     icon : "fa fa-user",
   },
   {
     title : "Service",
-    url : "/service",
+    url : "/",
     cName : "nav-links",
     icon : "fa fa-briefcase",
   },
   {
     title : "Contact",
-    url : "/contact",
+    url : "",
     cName : "nav-links",
     icon : "fa fa-comment",
   },
   {
     title : "Sign Up",
-    url : "/signup",
+    url : "/",
     cName : "nav-links-mobile",
   },
 ]
